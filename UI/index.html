@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Cotação de bitcoin</title>
+      <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+      <link href="css/css.css" rel="stylesheet">
+      <link rel="icon" href="img/bitcoin.ico">
+   </head>
+   <body id="page-top">
+      <div id="wrapper">
+         <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+            <li>
+               <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                  <div>Bitcoin website</div>
+                  <img class="img-profile rounded-circle" src="img/image.jpeg" width="50" height="50" alt="Bitcoin website">
+               </a>
+            </li>
+            <li>
+               <hr class="sidebar-divider">
+               <div class="sidebar-heading">
+                  Opções
+               </div>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link collapsed" href="index.html">
+               <i class="fas fa-fw fa-home"></i>
+               <span>Início</span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="definition.html">
+               <i class="fas fa-fw fa-question-circle"></i>
+               <span>O que é bitcoin?</span></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="calculator.html">
+               <i class="fas fa-fw fa-table"></i>
+               <span>Calculadora de bitcoins</span></a>
+            </li>
+            <li>
+               <hr class="sidebar-divider d-none d-md-block">
+               <div class="text-center d-none d-md-inline">
+                  <button class="rounded-circle border-0" id="sidebarToggle"></button>
+               </div>
+            </li>
+         </ul>
+         <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+               <nav class="topbar static-top shadow gg">
+                  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                  <i class="fa fa-bars"></i>
+                  </button>
+               </nav>
+               <div class="container-fluid">
+                  <div class="how-much">
+                     <h1 class="color-define"><b>Quanto custa um Bitcoin?</b></h1>
+                  </div>
+                  <div class="row">
+                     <div class="col-xl-10 col-lg-7 ggg">
+                        <div class="card shadow mb-4">
+                           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                              <h6 class="m-0 font-weight-bold text-primary">Cotação em tempo real (Atualizações feitas de 4 em 4 segundos)</h6>
+                           </div>
+                           <div class="card-body xx">
+                              <div class="chart-pie pt-4 pb-2 xxx">
+                                 <p id="cotacao"></p>
+                              </div>
+                              <div class="mt-4 text-center small">
+                                 <iframe class="framer" src="http://free.timeanddate.com/clock/i6tdcx8k/n456/tlbr5/fn7/fs26/fcf00/tct/pct/ftbi/tt0/tw1/tm1/th1" width="468" height="39"></iframe>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-10 col-lg-7 ggg">
+                        <div class="card shadow mb-4">
+                           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                              <h6 class="m-0 font-weight-bold text-primary">Gráfico da cotação em tempo real</h6>
+                              <div class="dropdown no-arrow">
+                              </div>
+                           </div>
+                           <div class="card-body">
+                              <div class="chart-area">
+                                 <div id="chartContainer">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <footer class="f2">
+                  <div>
+                     <div class="f3">
+                        <span class="f4">Copyright &copy; P.A.R 2019</span>
+                     </div>
+                     <div id="results"></div>
+                  </div>
+               </footer>
+            </div>
+         </div>
+         <a class="scroll-to-top rounded" href="#page-top">
+         <i class="fas fa-angle-up"></i>
+         </a>
+      </div>
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <script src="js/sb-admin-2.min.js"></script>
+      <script src="js/makeId.js"></script>
+      <script src="js/loadChart.js"></script>		
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   </body>
+</html>
