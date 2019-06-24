@@ -9,7 +9,7 @@ setInterval(function sendRequest() {
 			"x-requested-with": "xhr"
 		}
 	}).done(function (response) {
-		calculate(parseFloat(response.BRL_XBT.lowest_ask_inexact), parseFloat(response.BRL_XBT.highest_bid_inexact));
+		calculate(parseFloat(response.BRL_XBT.highest_bid_inexact), parseFloat(response.BRL_XBT.lowest_ask_inexact));
 		console.log(response);
 	}).fail(function (jqXHR, textStatus) {
 		console.error(textStatus)
