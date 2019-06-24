@@ -33,9 +33,9 @@
 			}
 		}).done(function (response) {
     		var text = document.getElementById('cotacao');
-		    xx = response.BRL_XBT.lowest_ask_inexact;
-		    text.innerHTML = "R$ " + response.BRL_XBT.lowest_ask_inexact;
-			yVal = parseFloat(response.BRL_XBT.lowest_ask_inexact);
+		    xx = response.BRL_XBT.highest_bid_inexact;
+		    text.innerHTML = "R$ " + response.BRL_XBT.highest_bid_inexact;
+			yVal = parseFloat(response.BRL_XBT.highest_bid_inexact);
 			console.log(response);
 		}).fail(function (jqXHR, textStatus) {
 			console.error(textStatus)
